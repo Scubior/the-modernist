@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Modernist</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="font/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="jquery.scrollTo.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $imgtext = $("<p>lorem ipsum dolar</p>");
+            $imgtext.css({
+               'background' : '#000000',
+               'color' : '#ffffff',
+                'margin-top' : '9.9em',
+                'padding' : '0.5rem',
+                'text-transform' : 'uppercase',
+               'opacity' : '0.5'
+            });
+            $('.latestwork-img').hover(function(){
+                $(this).append($imgtext);
+            });
+            // left slide button
+            $('.slider-btn-center').click(function(){
+                $('.slider-box-left').animate({left:'-100%'});
+                $('.slider-box').animate({right:'0'});
+            });
+            // left slide button mobile
+            $('.slider-btn-center-fixed').click(function(){
+                $('.slider-box-left').animate({left:'-100%'});
+                $('.slider-box').animate({right:'0'});
+            });
+            // center slide button
+            $('.slider-btn-left').click(function(){
+                $('.slider-box').animate({right:'-200%'});
+                $('.slider-box-left').animate({left:'0'});
+            });
+            
+            $('.slider-btn-right').click(function(){
+                $('.slider-box').animate({left:'-200%'});
+                $('.slider-box-right').animate({right:'0'});
+            });
+            // moblie fixed
+            $('.slider-btn-right-fixed').click(function(){
+                $('.slider-box').animate({left:'-200%'});
+                $('.slider-box-right').animate({right:'0'});
+            });
+            // right slide button
+            $('.slider-btn-middle').click(function(){
+                $('.slider-box').animate({left:'0%'});
+                $('.slider-box-right').animate({right:'-100%'});
+            });
+            
+        });
+        </script>
+	</head>
+	<body>
+        <div class="content-box">
+        <div class="baner-box">
+            <div class="header">
+                <div class="header-logo">
+                    <p>The Modernist</p>
+                    <small>Free PSD Website Themplate</small>
+                </div>
+                <button class="header-mobile-nav-btn">menu</button>
+                <div class="header-nav" id="mobile-nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">style demo</a></li>
+                        <li><a href="#">full width</a></li>
+                        <li><a href="#">dropdown</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-box-left">
+                    <div class="slider-btn-center-fixed">&gt;</div>
+                    <div class="slider-text">
+                    <p>Cursus penati saccum nulla.</p>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque in mauris et vestibulum. Fusce luctus, tellus in vestibulum pretium, diam elit sagittis est, porta semper quam elit at quam.</small>
+                    <button type="button">Read more here <span>&raquo;</span></button>
+                    </div>
+                    <div class="slider-box-img">
+                        <div class="slider-img img-sepia"></div>
+                    </div>
+                    <div class="slider-btn-center">&gt;</div>
+                </div>
+                <div class="slider-box">
+                    <div class="slider-btn-left">&lt;</div>
+                    <div class="slider-text">
+                    <p>Cursus penati saccum nulla.</p>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque in mauris et vestibulum. Fusce luctus, tellus in vestibulum pretium, diam elit sagittis est, porta semper quam elit at quam.</small>
+                    <button type="button">Read more here <span>&raquo;</span></button>
+                    </div>
+                    <div class="slider-box-img">
+                        <div class="slider-img"></div>
+                    </div>
+                    <div class="slider-btn-right-fixed">&gt;</div>
+                    <div class="slider-btn-right">&gt;</div>
+                </div>
+                <div class="slider-box-right">
+                    <div class="slider-btn-middle">&lt;</div>
+                    <div class="slider-text">
+                    <p>Cursus penati saccum nulla.</p>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque in mauris et vestibulum. Fusce luctus, tellus in vestibulum pretium, diam elit sagittis est, porta semper quam elit at quam.</small>
+                    <button typ="button">Read more here <span>&raquo;</span></button>
+                    </div>
+                    <div class="slider-box-img">
+                        <div class="slider-img img-grayscale"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="services">
+            <div class="services-box">
+                <i class="fa fa-database services-box-icon" aria-hidden="true"></i>
+                <p>service title</p> 
+                <small>Cras imperdiet felis vel lectus commodo pharetra. Aenean consectetur nec nisl id luctus. </small>
+            </div>
+            <div class="services-box">
+            <i class="fa fa-credit-card services-box-icon" aria-hidden="true"></i>
+                <p>service title</p>
+                <small>Cras imperdiet felis vel lectus commodo pharetra. Aenean consectetur nec nisl id luctus. </small></div>
+            <div class="services-box">
+            <i class="fa fa-download services-box-icon" aria-hidden="true"></i>
+                <p>service title</p>
+                <small>Cras imperdiet felis vel lectus commodo pharetra. Aenean consectetur nec nisl id luctus. </small></div>
+            <div class="services-box">
+            <i class="fa fa-exchange services-box-icon" aria-hidden="true"></i>
+                <p>service title</p>
+                <small>Cras imperdiet felis vel lectus commodo pharetra. Aenean consectetur nec nisl id luctus. </small></div>
+        </div>    
+        <div class="latestwork">
+            <div class="latestwork-btn">latest work</div>
+            <div class="latestwork-box-img">
+                <div class="latestwork-img"></div>
+                <div class="latestwork-img"></div>
+                <div class="latestwork-img"></div>
+                <div class="latestwork-img"></div>
+                <div class="latestwork-img"></div>
+                <div class="latestwork-img"></div>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="footer">
+            <div class="footer-inside-box">
+                <h4>From The Blog</h4>
+                <p><span class="footer-green">Post Title</span></p>
+                <small><span class="footer-green">Admin</span>, domainname.com</small><br>
+                <small>Monday, 26 July 2017</small>
+                <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="footer-inside-box">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#"><span>&raquo;</span>Lorem ipsum dolor sit</a></li>
+                    <li><a href="#"><span>&raquo;</span>Amet consectetur</a></li>
+                    <li><a href="#"><span>&raquo;</span>Praesent velsem id</a></li>
+                    <li><a href="#"><span>&raquo;</span>Curabitur hendrerit est</a></li>
+                    <li><a href="#"><span>&raquo;</span>Aliqum eget erat nec sapien</a></li>
+                    <li><a href="#"><span>&raquo;</span>Cras id augue nunc</a></li>
+                    <li><a href="#"><span>&raquo;</span>Sed a nulla urna</a></li>
+                </ul>
+            </div>
+            <div class="footer-inside-box">
+                <h4>Latest Tweets</h4>
+                <p><span class="footer-green">@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet 1 day ago</p>
+                <p><span class="footer-green">@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet 1 day ago</p>
+            </div>
+            <div class="footer-inside-box">
+                <h4>Contact us</h4>
+                <form>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Message">
+                <button type="submit">Submit</button>
+                </form>    
+            </div>
+            </div>
+            <div class="copyright">
+            <small>Copyright <i class="fa fa-globe" aria-hidden="true"></i> 2017</small>
+            <small>Template by <a href="http://www.os-templates.com/free-psd-templates/the-modernist" title="Free Website Templates">OS Templates</a></small>
+            </div>
+        </div>
+        </div>
+	</body>
+</html>
